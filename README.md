@@ -1,27 +1,25 @@
-# AngularPokedex
+# Angular Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+Projeto desenvolvido para avaliação de conhecimentos. Gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 9.1.3.
 
-## Development server
+### Pré-requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Git
+- Node
+- NPM
+- Angular CLI
 
-## Code scaffolding
+### Instruções
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clone o Reposítório e instale as dependências
+```shell
+ git clone https://github.com/chicojunior/angular-pokedex.git
+ cd angular-pokedex
+ npm install
+```
 
-## Build
+Rode o comando `ng serve` para o servidor de desenvolvimento. Abra no browser o endereço `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Build
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para criar um build rode o comando `ng build`. Os artefatos serão gerados na pasta `dist/`. Use `--prod` para um build de produção.

@@ -34,6 +34,7 @@ export class ListComponent implements OnInit {
             this.pokemon = res;
             this.pokemon.image = `https://pokeres.bastionbot.org/images/pokemon/${res.id}.png`;
             this.pokemonList = [...this.pokemonList, this.pokemon];
+            this.pokemonList.sort((a, b) => a.id - b.id);
           });
         }
       });

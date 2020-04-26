@@ -24,12 +24,9 @@ export class CardComponent implements OnInit {
 
   getTypes(pokemon) {
     pokemon.types.forEach((element) => {
-      if (element.url) {
-        this.service.getResource(element.url).subscribe((res) => {
-          debugger;
-          console.log(res);
+      if (element.type.url) {
+        this.service.getResource(element.type.url).subscribe((res) => {
           this.types.push(res);
-          console.log(this.types);
         });
       }
     });

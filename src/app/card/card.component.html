@@ -5,17 +5,25 @@
 
     <div>
       <label>Abilities</label>
-      <p *ngFor="let ability of abilities">{{ ability.name }}</p>
+      <ul>
+        <li *ngFor="let ability of abilities">
+          {{ ability.name | titlecase }}
+        </li>
+      </ul>
     </div>
 
     <div>
       <label>Forms</label>
-      <div *ngFor="let form of forms">{{ form.name }}</div>
+      <ul>
+        <li *ngFor="let form of forms">{{ form.name | titlecase }}</li>
+      </ul>
     </div>
 
     <div>
       <label>Types</label>
-      <div *ngFor="let type of types">{{ type.name }}</div>
+      <ul>
+        <li *ngFor="let type of types">{{ type.name | titlecase }}</li>
+      </ul>
     </div>
   </mat-card-content>
 </mat-card>
