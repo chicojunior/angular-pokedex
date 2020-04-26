@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <img mat-card-image src="{{ pokemon.image }}" />
+  <mat-card-content>
+    <p>{{ pokemon.name | uppercase }}</p>
+
+    <div>
+      <label>Abilities</label>
+      <p *ngFor="let ability of abilities">{{ ability.name }}</p>
+    </div>
+
+    <div>
+      <label>Forms</label>
+      <div *ngFor="let form of forms">{{ form.name }}</div>
+    </div>
+
+    <div>
+      <label>Types</label>
+      <div *ngFor="let type of types">{{ type.name }}</div>
+    </div>
+  </mat-card-content>
+</mat-card>
